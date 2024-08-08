@@ -6,8 +6,9 @@ export default function Burger({ className }) {
 
   return (
     <button
+      onClick={() => setBurgerClicked(!burgerClicked)}
       type="button"
-      className={`burger ${className ? className : ""}`}
+      className={`burger ${burgerClicked ? "_active" : ""}`}
       aria-label={`${burgerClicked ? "Закрыть меню" : "Открыть меню"}`}
     >
       <span className="burger__slice"></span>

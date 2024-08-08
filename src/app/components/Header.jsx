@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import logo from "@/images/logo.png";
 import Menu from "./Menu";
+import Burger from "./Burger";
 
 export default function Header({ className }) {
   return (
@@ -12,7 +13,8 @@ export default function Header({ className }) {
         <Link href="/">
           <Image src={logo} alt="" />
         </Link>
-        <Menu/>
+        <Menu />
+        <Burger/>
       </Container>
     </header>
   );
