@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body>
-        <div className="h-dvh grid grid-rows-layout">
+        <div className="h-dvh grid grid-rows-layout overflow-hidden">
           <Header />
           <main>{children}</main>
           <Footer />

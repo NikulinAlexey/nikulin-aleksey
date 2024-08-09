@@ -1,12 +1,8 @@
-"use client";
-
-import { useState } from "react";
-export default function Burger({ className }) {
-  const [burgerClicked, setBurgerClicked] = useState(false);
+export default function Burger({ burgerClicked, onClick }) {
 
   return (
     <button
-      onClick={() => setBurgerClicked(!burgerClicked)}
+      onClick={() => onClick(!burgerClicked)}
       type="button"
       className={`burger ${burgerClicked ? "_active" : ""}`}
       aria-label={`${burgerClicked ? "Закрыть меню" : "Открыть меню"}`}

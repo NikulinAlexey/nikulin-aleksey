@@ -78,4 +78,18 @@ body {
   .burger._active:after {
     transform: translateY(calc(var(--burger-slice-height) * -1)) rotate(-45deg);
   }
+
+  .menu {
+    --c-header-height: 68px;
+
+    top: var(--c-header-height);
+    left: 0;
+    background-color: red;
+    height: calc(100dvh - var(--c-header-height));
+    transition: transform .3s ease;
+  }
+  .menu._active {
+    left: 0;
+    transform: translateX(0);
+  }
 }
